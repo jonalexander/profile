@@ -14,17 +14,17 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  /*background-image: url('p2017.jpg');*/
 }
 #container:hover {
   opacity: 1;
 }
-#info {
+.info {
   width: 300px;
   background-color: antiquewhite;
   color: #212121;
   font-size: 1.4em;
-  padding-bottom: 0.6em;
+  padding: .4em 0
+  /*padding-bottom: 0.6em;*/
 }
 p {
   text-shadow: 10px 10px Khaki;
@@ -56,5 +56,17 @@ a:active {
 }
 #profile:hover {
   align-self:flex-end;
-  /*background-image: url('p2017.jpg');;*/
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+  #container {
+    background-color: AntiqueWhite;
+  }
+  .info {
+    font-size: 2em;
+    width: 600px;
+  }
+  #profile {
+    width: 600px;
+    height: 600px;
+  }
 }
